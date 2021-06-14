@@ -1,12 +1,15 @@
-import React from "react";
-import Nav from "./Nav";
+import React from 'react';
+//components
+import Nav from './Nav';
+import CardContainer from './CardContainer';
 
-import hogs from "../porkers_data";
+import hogs from '../porkers_data';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Nav />
+      <CardContainer hogData={hogs} />
     </div>
   );
 }
